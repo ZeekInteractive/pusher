@@ -13,7 +13,6 @@ cd repo
 
 # Update our branches from origin
 git fetch origin
-git pull origin master
 
 # Checkout the branch that is going to be deployed
 git checkout $COMMIT
