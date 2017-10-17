@@ -6,6 +6,7 @@
 *.swp
 Thumbs.db
 node_modules/
+.sass-cache
 
 composer.json
 composer.lock
