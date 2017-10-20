@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Exit if any command fails
+set -e
+
 # Variables
 COMMIT=${1:-master}
 TIMESTAMP=`date`
