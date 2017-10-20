@@ -27,7 +27,7 @@ rsync -avz --exclude .git --exclude .gitignore ./ ../deploy/wp-content/
 # Move to deploy folder
 cd ../deploy
 
-cp ~/.gitignore-master .gitignore
+cp ~/scripts/.gitignore-master .gitignore
 
 cd wp-content/
 
