@@ -34,6 +34,11 @@ cd wp-content/
 # Build steps (composer, npm, gulp, etc)
 composer install -o --prefer-dist --no-progress --no-dev
 
+# @todo place .env.php file from Deploybot
+
+#git diff
+#exit 1
+
 git add .
 git commit -am "Build release $COMMIT [$TIMESTAMP]"
 git push wpengine master
