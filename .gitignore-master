@@ -34,6 +34,11 @@ wp-content/mu-plugins/limit-login-attempts
 wp-content/mu-plugins/wpengine-common
 wp-content/mysql.sql
 
+# liquid web specific
+mu-plugins/liquidweb_mwp.php
+mu-plugins/lw_disable_nags.php
+mu-plugins/wp-cli-packages/*
+
 # wp core (as of 3.4.1)
 /db-config.php
 /index.php
