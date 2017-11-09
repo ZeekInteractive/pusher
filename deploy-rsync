@@ -29,7 +29,7 @@ rsync -avz --exclude .git --exclude .gitignore ./ ../deploy/wp-content/
 cp ~/scripts/.gitignore-master .gitignore
 
 # Build steps (composer, npm, gulp, etc)
-composer install -o --prefer-dist --no-progress --no-dev -d wp-content
+composer install -o --prefer-dist --no-progress --no-dev
 
 git add .
 git commit -am "Build release $COMMIT [$TIMESTAMP]"
