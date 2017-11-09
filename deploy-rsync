@@ -25,6 +25,8 @@ git checkout $COMMIT
 rm -rf ../deploy/wp-content
 rsync -avz --exclude .git --exclude .gitignore ./ ../deploy/wp-content/
 
+# move to deploy folder
+cd ../deploy/wp-content
 
 cp ~/scripts/.gitignore-master .gitignore
 
