@@ -5,6 +5,7 @@
 /composer.lock
 node_modules/
 object-cache.php
+advanced-cache.php
 mu-plugins/mu-plugin.php
 mu-plugins/slt-force-strong-passwords.php
 mu-plugins/limit-login-attempts
@@ -14,3 +15,9 @@ mu-plugins/wpengine-common
 mu-plugins/liquidweb_mwp.php
 mu-plugins/lw_disable_nags.php
 mu-plugins/wp-cli-packages
+mu-plugins/wp-vulnerability-scanner.php
+mu-plugins/wp-fail2ban.php
+mu-plugins/lw-varnish-cache-purger.php
+
+# Just in case someone sets the wrong dir
+wp-content
