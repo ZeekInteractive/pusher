@@ -25,19 +25,13 @@ git checkout $COMMIT
 rm -rf ../deploy/wp-content
 rsync -avz --exclude .git --exclude .gitignore ./ ../deploy/wp-content/
 
-# Move to deploy folder
-cd ../deploy
 
 cp ~/scripts/.gitignore-master .gitignore
 
-cd wp-content/
-
 # Build steps (composer, npm, gulp, etc)
-composer install -o --prefer-dist --no-progress --no-dev
-
-cd ../
+composer install -o --prefer-dist --no-progress --no-dev -d wp-content
 
 git add .
 git commit -am "Build release $COMMIT [$TIMESTAMP]"
 
-rsync -azhv . $2 --delete --exclude-from '.gitignore'
+rsync -azhv "$(pwd -P)/" $2 --delete --exclude-from '~/scripts/rsync-excludes.txt'
