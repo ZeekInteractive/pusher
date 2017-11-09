@@ -10,7 +10,7 @@ node_modules/
 
 composer.json
 composer.lock
-README.md
+/README.md
 
 # wordpress specific
 wp-config.php
