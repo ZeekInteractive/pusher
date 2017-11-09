@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Prompt for user input
+echo "Project name:"
+read PROJECT
+
+echo "Environment:"
+read ENVIRONMENT
+
+# Safety check to prevent duplicate environment overwrite
+if [ -d "$PROJECT/$ENVIRONMENT" ]; then
+  echo "Environment already exists"
+  exit 1
+fi
+
+echo "Git repo address:"
+read REPO_URL
+
+# Reset to home
+cd ~
+
+# Directory we're in
+echo "In directory `pwd`"
+
+echo $PROJECT
+echo $ENVIRONMENT
+
+mkdir -p "$PROJECT/$ENVIRONMENT"
+cd "$PROJECT/$ENVIRONMENT"
+
+git clone $REPO_URL repo
+mkdir -p deploy
+
+cd deploy
+git init
