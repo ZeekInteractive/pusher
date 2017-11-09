@@ -4,7 +4,8 @@
 set -e
 
 # Variables
-COMMIT=${1:-master}
+COMMIT=${1}
+REMOTE=${2}
 TIMESTAMP=`date`
 
 # Directory we're in
@@ -34,11 +35,8 @@ cd wp-content/
 # Build steps (composer, npm, gulp, etc)
 composer install -o --prefer-dist --no-progress --no-dev
 
-# @todo place .env.php file from Deploybot
+cd ../
 
-#git diff
-#exit 1
-
-git add .
 git commit -am "Build release $COMMIT [$TIMESTAMP]"
-git push wpengine master
+
+rsync -azhv . $2 --delete --exclude-from '.gitignore'
