@@ -37,6 +37,7 @@ composer install -o --prefer-dist --no-progress --no-dev
 
 cd ../
 
+git add .
 git commit -am "Build release $COMMIT [$TIMESTAMP]"
 
 rsync -azhv . $2 --delete --exclude-from '.gitignore'
