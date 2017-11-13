@@ -10,6 +10,7 @@ mu-plugins/mu-plugin.php
 mu-plugins/slt-force-strong-passwords.php
 mu-plugins/limit-login-attempts
 mu-plugins/wpengine-common
+.env*
 
 # liquid web specific
 mu-plugins/liquidweb_mwp.php
