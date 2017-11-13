@@ -4,6 +4,7 @@
 /composer.json
 /composer.lock
 node_modules/
+/banners/
 object-cache.php
 advanced-cache.php
 mu-plugins/mu-plugin.php
