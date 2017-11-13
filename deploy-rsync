@@ -23,7 +23,7 @@ git checkout $COMMIT
 
 # rsync to move to deploy directory
 rm -rf ../deploy/wp-content
-rsync -avz --exclude .git --exclude .gitignore ./ ../deploy/wp-content/
+rsync -az --exclude .git --exclude .gitignore ./ ../deploy/wp-content/
 
 # move to deploy folder
 cd ../deploy/wp-content
