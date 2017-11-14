@@ -34,6 +34,8 @@ cd wp-content/
 # Build steps (composer, npm, gulp, etc)
 composer install -o --prefer-dist --no-progress --no-dev
 
+cd ../
+
 git add .
 git commit -am "Build release $COMMIT [$TIMESTAMP]"
 git push wpengine master
