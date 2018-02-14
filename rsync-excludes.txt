@@ -16,6 +16,7 @@ mu-plugins/wpengine-common
 cache/
 .htaccess
 upgrade/
+wflogs/
 
 # liquid web specific
 mu-plugins/liquidweb_mwp.php
