@@ -20,7 +20,6 @@ wflogs/
 backdrop/
 ew_backup/
 w3tc-config/
-wptouch-data/
 
 # liquid web specific
 mu-plugins/liquidweb_mwp.php
