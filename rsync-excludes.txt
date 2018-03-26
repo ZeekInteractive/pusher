@@ -31,3 +31,6 @@ mu-plugins/lw-varnish-cache-purger.php
 
 # Just in case someone sets the wrong dir
 wp-content
+
+# Don't send tests
+/tests/
