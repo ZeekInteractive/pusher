@@ -1,4 +1,4 @@
-# Zeek WPE Pusher
+# Pusher
 
 ## Purpose
 
