@@ -46,3 +46,6 @@ cd deploy
 git init
 
 git remote add wpengine $WPE_REMOTE_URL
+
+echo "Environment successfully setup: $PROJECT/$ENVIRONMENT"
+exit 0
