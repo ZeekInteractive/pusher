@@ -26,5 +26,3 @@ The `Repo` directory is synced with the origin/canonical repo and this is where 
 The `Deploy` directory is synced with the WP Engine environment and only contains build commits (which includes things like vendor files and compiled assets). Each deploy creates a new commit and the diff between the last commit and the new commit is what gets pushed to WP Engine.
 
 ![](http://d.pr/i/I9lLJo/1Itjqkqc+)
-
-# Test update
