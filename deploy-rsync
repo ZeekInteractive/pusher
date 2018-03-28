@@ -23,10 +23,18 @@ git checkout $COMMIT
 
 # rsync to move to deploy directory
 rm -rf ../deploy/wp-content
+
+# Rsync over the repo
 rsync -az --exclude .git --exclude .gitignore ./ ../deploy/wp-content/
 
+# Copy the ENV file if it exists
+cd ../
+if [ ! -f .env.php ]; then
+    cp .env.php deploy/wp-content/mu-plugins/app/.env.php
+fi
+
 # move to deploy folder
-cd ../deploy/wp-content
+cd deploy/wp-content
 
 cp ~/scripts/.gitignore-master .gitignore
 
