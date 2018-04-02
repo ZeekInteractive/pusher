@@ -20,6 +20,9 @@ backdrop/
 ew_backup/
 w3tc-config/
 
+# @todo remove this after .env files are managed by buddy
+.env*
+
 # liquid web specific
 mu-plugins/liquidweb_mwp.php
 mu-plugins/lw_disable_nags.php
