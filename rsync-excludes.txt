@@ -36,3 +36,6 @@ wp-content
 
 # Don't send tests
 /tests/
+
+# Exclude app/data
+mu-plugins/app/data/
