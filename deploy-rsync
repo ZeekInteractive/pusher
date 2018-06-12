@@ -44,4 +44,4 @@ composer install -o --prefer-dist --no-progress --no-dev
 git add .
 git commit -am "Build release $COMMIT [$TIMESTAMP]"
 
-rsync -zhv -rlD "$(pwd -P)/" $2 --delete --exclude-from '/home/aaronholbrook/rsync-excludes.txt'
+rsync -zhv -rlD "$(pwd -P)/" $2 --delete --exclude-from '/home/aaronholbrook/scripts/rsync-excludes.txt'
