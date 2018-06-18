@@ -16,6 +16,23 @@ fi
 echo "Git repo address:"
 read REPO_URL
 
+echo "Server Alias"
+read SERVER_ALIAS
+
+if grep -xq "Host $SERVER_ALIAS" ~/.ssh/config; then
+  echo 'Server alias already exists in ~/.ssh/config'
+  exit 1
+fi
+
+echo "Server IP"
+read SERVER_IP
+
+echo "Server Port"
+read SERVER_PORT
+
+echo "Server Username"
+read SERVER_USERNAME
+
 # Reset to home
 cd ~
 
@@ -33,3 +50,6 @@ mkdir -p deploy
 
 cd deploy
 git init
+
+# Add our server ssh config to our ~/.ssh/config file
+printf '\n\n%s\n%s\n\t%s\n\t%s\n\t%s' "#Added via env-setup-rsync on `date`" "Host $SERVER_ALIAS" "HostName $SERVER_IP" "User $SERVER_USERNAME" "Port $SERVER_PORT" >> ~/.ssh/config
