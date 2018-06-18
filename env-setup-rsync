@@ -52,4 +52,4 @@ cd deploy
 git init
 
 # Add our server ssh config to our ~/.ssh/config file
-printf '\n\n%s\n%s\n\t%s\n\t%s\n\t%s' "#Added via env-setup-rsync on `date`" "Host $SERVER_ALIAS" "HostName $SERVER_IP" "User $SERVER_USERNAME" "Port $SERVER_PORT" >> ~/.ssh/config
+printf '\n%s\n%s\n\t%s\n\t%s\n\t%s\n' "#Added via env-setup-rsync on `date`" "Host $SERVER_ALIAS" "HostName $SERVER_IP" "User $SERVER_USERNAME" "Port $SERVER_PORT" >> ~/.ssh/config
