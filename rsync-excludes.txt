@@ -12,7 +12,7 @@ mu-plugins/mu-plugin.php
 mu-plugins/slt-force-strong-passwords.php
 mu-plugins/limit-login-attempts
 mu-plugins/wpengine-common
-cache/
+/cache/
 .htaccess
 upgrade/
 wflogs/
