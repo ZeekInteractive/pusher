@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Exit if any command fails
+set -e
+
+# Variables
+REMOTE=${1}
+
+# Directory we're in
+echo "Adding .flush-cache file to server"
+
+ssh $1 touch html/.flush-cache
