@@ -28,6 +28,7 @@ mu-plugins/wp-vulnerability-scanner.php
 mu-plugins/wp-fail2ban.php
 mu-plugins/lw-varnish-cache-purger.php
 mu-plugins/plugin-reports/
+mu-plugins/liquid-web/
 
 # Just in case someone sets the wrong dir
 wp-content
