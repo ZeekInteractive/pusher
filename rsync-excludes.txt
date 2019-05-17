@@ -40,3 +40,4 @@ wp-content
 # Exclude app/data
 mu-plugins/app/data/
 rsync-excludes.txt
+
