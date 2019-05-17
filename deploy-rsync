@@ -37,7 +37,10 @@ fi
 cd deploy/wp-content
 
 cp ~/scripts/.gitignore-master .gitignore
-cp ~/scripts/rsync-excludes.txt rsync-excludes.txt
+
+# Combine excludes to allow custom exclusions
+touch .excludes
+cat ~/scripts/rsync-excludes.txt .excludes > rsync-excludes.txt
 
 # Build steps (composer, npm, gulp, etc)
 composer install -o --prefer-dist --no-progress --no-dev
