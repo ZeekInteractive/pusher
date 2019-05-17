@@ -40,4 +40,7 @@ wp-content
 # Exclude app/data
 mu-plugins/app/data/
 rsync-excludes.txt
+.excludes
+
+# Add any excludes from repo's .excludes file
 
