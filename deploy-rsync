@@ -43,7 +43,9 @@ touch .excludes
 cat ~/scripts/rsync-excludes.txt .excludes > rsync-excludes.txt
 
 # Build steps (composer, npm, gulp, etc)
-composer install -o --prefer-dist --no-progress --no-dev
+if [ -f composer.lock ]; then
+    composer install -o --prefer-dist --no-progress --no-dev
+fi
 
 git add .
 git commit -am "Build release $COMMIT [$TIMESTAMP]"
