@@ -38,7 +38,9 @@ cp ~/scripts/.gitignore-master .gitignore
 cd wp-content/
 
 # Build steps (composer, npm, gulp, etc)
-composer install -o --prefer-dist --no-progress --no-dev
+if [ -f composer.lock ]; then
+    composer install -o --prefer-dist --no-progress --no-dev
+fi
 
 cd ../
 
