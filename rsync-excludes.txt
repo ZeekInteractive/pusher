@@ -18,7 +18,10 @@ upgrade/
 wflogs/
 backdrop/
 ew_backup/
+
 w3tc-config/
+wp-rocket-config/
+
 
 # liquid web specific
 mu-plugins/liquidweb_mwp.php
@@ -30,6 +33,11 @@ mu-plugins/lw-varnish-cache-purger.php
 mu-plugins/plugin-reports/
 mu-plugins/liquid-web/
 mu-plugins/liquid-web.php
+
+# LW www
+phpunit.xml
+.travis.yml
+
 
 # Just in case someone sets the wrong dir
 wp-content
