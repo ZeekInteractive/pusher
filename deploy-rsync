@@ -47,7 +47,7 @@ if [ -f composer.lock ]; then
     composer install -o --prefer-dist --no-progress --no-dev
 fi
 
-git add .
-git commit -am "Build release $COMMIT [$TIMESTAMP]"
+#git add .
+#git commit -am "Build release $COMMIT [$TIMESTAMP]"
 
 rsync -zhv -rlD "$(pwd -P)/" $2 --delete --exclude-from 'rsync-excludes.txt'
