@@ -3,6 +3,7 @@
 /README.md
 /composer.json
 /composer.lock
+/auth.json
 node_modules/
 /banners/
 object-cache.php
