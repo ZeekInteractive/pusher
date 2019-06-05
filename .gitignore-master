@@ -10,6 +10,7 @@ node_modules/
 
 composer.json
 composer.lock
+/auth.json
 /README.md
 
 # wordpress specific
