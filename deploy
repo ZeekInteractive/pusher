@@ -30,6 +30,11 @@ if [ -f .env.php ]; then
     cp .env.php deploy/wp-content/mu-plugins/app/
 fi
 
+# Copy the auth.json file if it exists
+if [ -f auth.json ]; then
+    cp auth.json deploy/wp-content/auth.json
+fi
+
 # Move to deploy folder
 cd deploy
 
