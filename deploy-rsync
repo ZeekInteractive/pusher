@@ -55,4 +55,4 @@ fi
 #git add .
 #git commit -am "Build release $COMMIT [$TIMESTAMP]"
 
-rsync -zhrlDi "$(pwd -P)/" $2 --delete --exclude-from 'rsync-excludes.txt'
+rsync -zhrlD "$(pwd -P)/" $2 --delete --exclude-from 'rsync-excludes.txt'
