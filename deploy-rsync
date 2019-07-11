@@ -55,4 +55,8 @@ fi
 #git add .
 #git commit -am "Build release $COMMIT [$TIMESTAMP]"
 
+echo 'Beginning rsync of changes'
+
 rsync -zhrlD "$(pwd -P)/" $2 --delete --exclude-from 'rsync-excludes.txt'
+
+echo 'Rsync completed'
