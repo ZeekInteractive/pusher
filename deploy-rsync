@@ -8,9 +8,9 @@ COMMIT=${1}
 REMOTE=${2}
 TIMESTAMP=`date`
 
-echo '\n-----------------------------\n'
+echo '-----------------------------'
 echo 'Welcome to Pusher, beginning build.'
-echo '\n-----------------------------\n'
+echo '-----------------------------'
 
 # Directory we're in
 echo "In directory `pwd`"
@@ -54,9 +54,9 @@ cat ~/scripts/rsync-excludes.txt .excludes > rsync-excludes.txt
 # Build steps (composer, npm, gulp, etc)
 if [ -f composer.lock ]; then
 
-    echo '\n-----------------------------\n'
+    echo '-----------------------------'
     echo 'Running Composer'
-    echo '\n-----------------------------\n'
+    echo '-----------------------------'
     
     composer install -o --prefer-dist --no-progress --no-dev
 fi
@@ -64,12 +64,12 @@ fi
 #git add .
 #git commit -am "Build release $COMMIT [$TIMESTAMP]"
 
-echo '\n-----------------------------\n'
+echo '-----------------------------'
 echo "Beginning file transfer to server: $2 via rsync"
-echo '\n-----------------------------\n'
+echo '-----------------------------'
 
 rsync -zhrlD "$(pwd -P)/" $2 --delete --exclude-from 'rsync-excludes.txt'
 
-echo '\n-----------------------------\n'
+echo '-----------------------------'
 echo 'File transfer completed (see above for any issues)'
-echo '\n-----------------------------\n'
+echo '-----------------------------'
