@@ -57,6 +57,6 @@ fi
 
 echo 'Beginning rsync of changes'
 
-rsync -zhrlDv "$(pwd -P)/" $2 --delete --exclude-from 'rsync-excludes.txt'
+rsync -zhrlD "$(pwd -P)/" $2 --delete --exclude-from 'rsync-excludes.txt'
 
 echo 'Rsync completed'
