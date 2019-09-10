@@ -35,6 +35,8 @@ mu-plugins/plugin-reports/
 mu-plugins/liquid-web/
 mu-plugins/liquid-web.php
 mu-plugins/000-liquidweb-config.php
+mu-plugins/jetpack.php
+mu-plugins/wp-redis
 
 # LW www
 phpunit.xml
