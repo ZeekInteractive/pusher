@@ -41,6 +41,7 @@ mu-plugins/wp-redis
 # nexus specific
 mu-plugins/nexcess-mapps
 mu-plugins/nexcess-mapps.php
+plugins/nexcess-mapps-dashboard
 
 # LW www
 phpunit.xml
