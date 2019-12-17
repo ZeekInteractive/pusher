@@ -42,6 +42,8 @@ mu-plugins/wp-redis
 mu-plugins/nexcess-mapps
 mu-plugins/nexcess-mapps.php
 plugins/nexcess-mapps-dashboard
+plugins/cache-enabler
+plugins/wp-redis
 
 # LW www
 phpunit.xml
