@@ -38,6 +38,10 @@ mu-plugins/000-liquidweb-config.php
 mu-plugins/jetpack.php
 mu-plugins/wp-redis
 
+# nexus specific
+mu-plugins/nexcess-mapps
+mu-plugins/nexcess-mapps.php
+
 # LW www
 phpunit.xml
 .travis.yml
