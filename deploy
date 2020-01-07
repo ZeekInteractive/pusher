@@ -51,4 +51,4 @@ cd ../
 
 git add .
 git commit -am "Build release $COMMIT [$TIMESTAMP]"
-git push -o nolint wpengine master
+git push wpengine master
