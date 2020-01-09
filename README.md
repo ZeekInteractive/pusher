@@ -12,9 +12,9 @@ This is extremely slow and can cause extensive periods of downtime while the sys
 
 Unfortunately WP Engine's git push is not really an option for teams and agencies (due to lack of a central, visible and consistent deployment process).
 
-This is where the Zeek Pusher comes into play.
+This is where Pusher comes into play.
 
-The Zeek Pusher is a bridge between Buddy/Deploybot and WP Engine's git push. You set it up as a standalone server that serves as the central point for the git push to WP Engine.
+Pusher is a bridge between Buddy/Deploybot and WP Engine's git push. You set it up as a standalone server that serves as the central point for the git push to WP Engine.
 
 ### How it works
 On the ZWP server, for the specific project and environment, there are two directories (each directory is a git repository):
