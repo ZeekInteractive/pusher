@@ -38,6 +38,7 @@ wp-content/mu-plugins/limit-login-attempts
 wp-content/mu-plugins/wpengine-common
 wp-content/mu-plugins/wpengine-security-auditor.php
 wp-content/mysql.sql
+wp-content/plugins/autoupdater/
 
 # liquid web specific
 mu-plugins/liquidweb_mwp.php
@@ -76,6 +77,7 @@ mu-plugins/wp-cli-packages/*
 /wp-content/index.php
 /wp-content/themes/index.php
 /wp-content/plugins/index.php
+
 
 # large/disallowed file types
 # a CDN should be used for these
