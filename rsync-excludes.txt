@@ -45,6 +45,10 @@ plugins/nexcess-mapps-dashboard
 plugins/cache-enabler
 plugins/wp-redis
 
+# Kinsta specific
+mu-plugins/kinsta-mu-plugins/
+mu-plugins/kinsta-mu-plugins.php
+
 # LW www
 phpunit.xml
 .travis.yml
