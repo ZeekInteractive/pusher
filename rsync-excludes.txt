@@ -8,6 +8,7 @@ node_modules/
 /banners/
 object-cache.php
 advanced-cache.php
+/mysql.sql
 wp-cache-config.php
 mu-plugins/mu-plugin.php
 mu-plugins/slt-force-strong-passwords.php
