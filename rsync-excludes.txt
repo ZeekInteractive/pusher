@@ -46,8 +46,9 @@ plugins/cache-enabler
 plugins/wp-redis
 
 # Kinsta specific
-mu-plugins/kinsta-mu-plugins/
-mu-plugins/kinsta-mu-plugins.php
+/mu-plugins/kinsta-mu-plugins/
+/mu-plugins/kinsta-mu-plugins.php
+/debug.log
 
 # LW www
 phpunit.xml
