@@ -55,6 +55,8 @@ plugins/wp-redis
 phpunit.xml
 .travis.yml
 
+# Nexcess
+/plugins/redis-cache
 
 # Just in case someone sets the wrong dir
 wp-content
