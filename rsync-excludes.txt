@@ -24,7 +24,6 @@ ew_backup/
 w3tc-config/
 wp-rocket-config/
 
-
 # liquid web specific
 mu-plugins/liquidweb_mwp.php
 mu-plugins/lw_disable_nags.php
@@ -43,8 +42,6 @@ mu-plugins/wp-redis
 mu-plugins/nexcess-mapps
 mu-plugins/nexcess-mapps.php
 plugins/nexcess-mapps-dashboard
-plugins/cache-enabler
-plugins/wp-redis
 
 # Kinsta specific
 /mu-plugins/kinsta-mu-plugins/
@@ -54,9 +51,6 @@ plugins/wp-redis
 # LW www
 phpunit.xml
 .travis.yml
-
-# Nexcess
-/plugins/redis-cache
 
 # Just in case someone sets the wrong dir
 wp-content
